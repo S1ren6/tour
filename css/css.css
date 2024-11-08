@@ -1,0 +1,267 @@
+body {
+	padding: 0;
+	margin: 0;
+/*	убрать края фотки.обнулить отступ*/
+font-family: "Anton", sans-serif;
+font-weight: 400;
+/*text-transform: uppercase; ШРИФТ И ТАК КАПСОМ*/
+color: black;
+font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+/*	обнулить отступ*/
+}
+
+a {
+	text-decoration: none;
+}
+.page{
+	overflow-y: auto;
+	scroll-snap-type: y mandatory;
+}
+section{
+	/*margin-top: 50px;*/
+	/*отступ*/
+	width: 100%;
+	height: 100vh;
+	background-color:gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+scroll-snap-align: start;
+}
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background: url('../img/back1.jpg') no-repeat center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*    фон*/
+scroll-snap-align: start;
+}
+
+.container{
+	width: 1620px;
+	height: 940px;
+}
+
+header a{
+	color: white;
+}
+
+.menu{
+	display: flex; 
+	justify-content: space-around;
+/*в ряд*/
+}
+
+.menu li a{
+	text-transform:uppercase;
+/*	все капс*/
+text-decoration: none;
+/*	без нижнего подчеркивания*/
+font-size:24px;
+letter-spacing: 0.1em;
+/*	растояние между буквами*/
+color: #ffffff;
+}
+
+.menu li {
+	margin-right: 40px;
+/*	пробелы между li*/
+}
+
+.tel {
+	font-size: 24px;
+	text-decoration: none;
+	
+	letter-spacing: 0.1em;
+	color: #ffffff;
+}
+.Tm1{
+	height: 30px;
+display: flex;
+	flex-direction: row;
+}
+.TopMenu{
+	height: 30px;
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.logo{
+	margin-right: 69px;
+}
+
+.mid{
+	text-transform: uppercase;
+	margin-top: 140px;
+	margin-left: 0;
+}
+
+.mid h1{
+	font-family: "Anton", sans-serif;
+	font-weight: 400;
+    font-size: 100px;
+    color: #023047;
+    margin:-10px;
+}
+
+.mid h2{
+font-family: "BenchNine", sans-serif;
+font-weight: 400;
+font-size: 40px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #023047;
+}
+
+.mid span{
+	color: white;
+}
+
+.byNow{
+	border-radius: 50px;
+width: 305px;
+height: 95px;
+background: #023047;
+border: none;
+font-weight: 400;
+/*жирность*/
+font-size: 40px;
+letter-spacing: 0.05em;
+/*горизонтельынй интервал*/
+text-transform: uppercase;
+/*все капс*/
+color: white;
+font-family: "Anton", sans-serif;
+}
+
+.byNow:hover{
+	/*наводка на кнопку*/
+	color: #023047;
+	background: white;
+	cursor: pointer;
+	/*меняет курсор*/
+}
+
+.about{
+background: url('../img/about.png') no-repeat center;
+}
+
+.aboutTopMenu{
+height: 180px;
+margin-top: 30px;
+margin-bottom: 50px;
+background:url('../img/aboutTopMenuBeck.png')no-repeat center;
+display: flex;
+flex-direction:column;
+justify-content: space-between;
+}
+.aboutTopMenuH3{
+font-family: "Bellota Text", sans-serif;
+font-weight: 700;
+font-size: 40px;
+text-transform: uppercase;
+text-align: center;
+color: #000;
+margin: 0px;
+display: flex;
+justify-self: start;
+}
+.aboutTopMenuP{
+margin: 0px;
+font-family: "Bellota Text", sans-serif;
+font-weight: 400;
+font-size: 20px;
+text-transform: uppercase;
+color: #000;
+}
+
+.aboutBigMenu{
+	height: 670px;
+}
+.aboutBigMenu1{
+	height: 312px;
+	margin-bottom: 46px;
+	display: flex;
+	justify-content: space-between;
+}
+.aboutBigMenuTop{
+	width: 435px;
+}
+.aboutBigMenuTopTop{
+border-radius: 15px;
+height: 208px;
+margin-bottom: 17px;
+}
+#aboutBigMenu1IDTop1Top{
+	background:url('../img/aboutBigMenu1IDTop1Top.jpg')no-repeat center;
+}
+#aboutBigMenu1IDTop2Top{
+	background:url('../img/aboutBigMenu1IDTop2Top.jpg')no-repeat center;
+}
+#aboutBigMenu1IDTop3Top{
+	background:url('../img/aboutBigMenu1IDTop3Top.jpg')no-repeat center;
+}
+.aboutBigMenuTopEnd{
+background-color: white;
+border-radius: 15px;
+height: 87px;
+}
+
+.aboutBigMenu2{
+	height: 312px;
+	display: flex;
+	justify-content: space-between;
+}
+#aboutBigMenu2IDTop1Top{
+	background:url('../img/aboutBigMenu2IDTop1Top.jpg')no-repeat center;
+}
+#aboutBigMenu2IDTop2Top{
+	background:url('../img/aboutBigMenu2IDTop2Top.jpg')no-repeat center;
+}
+#aboutBigMenu2IDTop3Top{
+	background:url('../img/aboutBigMenu2IDTop3Top.jpg')no-repeat center;
+}
+
+.footer{
+	height: 100px;
+	width:100%;
+	background-color:rgb(92, 92, 92);
+	margin-top: auto;
+
+}
+
+@media(max-width:1200px){
+.aboutBigMenu{
+	width: 1000px;
+	grid-template-columns: 1fr 280px;
+}
+}
+
+@media(max-width:768px){
+	.aboutBigMenu{
+		width: 480px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+
+	}
+}
+
+@media(max-width:480px){
+	
+}
